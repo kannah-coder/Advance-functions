@@ -1,0 +1,14 @@
+# ignore system files
+.DS_Store
+Thumbs.db
+
+# ignore IDE/editor files
+.vscode/
+.idea/
+
+# ignore node/npm stuff (if added later)
+node_modules/
+package-lock.json
+
+# ignore logs
+*.log
