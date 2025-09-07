@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <button class="js-1">Click</button>
+    <script>
+       
+        function greet(){
+            console.log('hello');
+        }
+        greet();
+        const greet1=function greet(){
+            console.log('hello1');
+        }
+        greet1(); //fucntion is as values can be stored in varibles 
+
+        // anonymous fucntion
+        greet2=function(){
+            console.log('hello2');
+        }
+        greet2();
+        //parameters as variables we an use
+        function display(param){
+            console.log(param+1);
+        }
+        display(2); //3
+        //fucntion inside a fucntion also we can pass
+        function run(param){
+            param();
+            
+        }
+        run(function(){
+            console.log('hello4');
+        });
+       
+
+        
+       const buttonElement=document.querySelector('.js-1');
+         const a=()=>{
+            console.log('click');
+        };
+        buttonElement.addEventListener('click',a);
+        buttonElement.removeEventListener('click',a);
+      
+        //this do same thing as onclick buttton
+
+       //remove Eventlistener
+       //note for remove event listener we should give two parameters but in second parameter ot directly function we can use ..so to avoid this assign the second parameter fucntion to a variable and give a variable aa parameter 
+       
+
+
+       //multiple listeners 
+       buttonElement.addEventListener('click',()=>{
+
+        console.log('click2');
+
+       });
+
+
+        
+        </script>
+</body>
+</html>
